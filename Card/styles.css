@@ -1,0 +1,115 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+/*Universal selector*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Savate', sans-serif;
+}
+
+body {
+    background-color: orange;
+}
+
+/*Card*/
+.card {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+}
+.card:hover {
+    transform: rotate(-2deg)
+}
+.card:hover .outside {
+    transform: rotateY(-170deg);
+}
+/*Card Inner*/
+.outside,
+.inside {
+    border: 1px solid white;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+.inside {
+    background: linear-gradient(to right, #e0e0e0, #ffffff 30%);
+    line-height: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: 50%;
+}
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+}
+/*Card Front page*/
+.head {
+    font-size:30px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.foot {
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+.head,.foot {
+    color: #143D5B
+}
+.dad-image {
+    width: 100%;
+    height: 50%;
+}
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
+    backface-visibility: hidden;
+    
+}
+.front {
+    background-color: #76A7BB;
+    }
+.back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left, #e0e0e0, #ffffff 30%);
+}
+/*Text in card*/
+.dad {
+    font-size: 20px;
+    margin-bottom: -100px;
+}
+.text {
+    text-align: center;
+    font-size: 20px;
+}
+.nathan {
+    font-size: 20px;
+}
+.backText {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 150px;
+    margin-top: 10px;
+    color: #143D5B;
+}
