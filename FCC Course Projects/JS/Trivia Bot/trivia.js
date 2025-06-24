@@ -1,0 +1,15 @@
+console.log("Hello! I'm your coding fun fact guide!");
+const botName = "TriviaBot";
+const botLocation = "the coding world";
+const favoriteLanguage = "JavaScript";
+let botIntroduction = "My name is " + botName + ", and I live on " + botLocation + ".";
+console.log(botIntroduction);
+let favoriteLanguageStatement = "My favorite programming language is " + favoriteLanguage + ".";
+console.log(favoriteLanguageStatement);
+let codingFact = "Did you know that JavaScript was created in just 10 days by Brendan Eich in 1995?";
+console.log(codingFact);
+codingFact = "Did you know that JavaScript is a versatile language that can be used for both front-end and back-end development.";
+console.log(codingFact);
+codingFact = "JavaScript was originally called Mocha, then renamed to LiveScript, and finally to " + favoriteLanguage + ".";
+console.log(codingFact);
+console.log("It was fun sharing these facts with you. Goodbye! - " + botName + " from " + botLocation + ".");

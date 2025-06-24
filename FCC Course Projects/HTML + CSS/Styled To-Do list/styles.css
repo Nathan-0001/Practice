@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color: darkseagreen;
+}   
+
+body{
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: green;
+}
+a:focus {
+    outline-color: orange;
+}  
+a:active {
+    color: yellow;
+}

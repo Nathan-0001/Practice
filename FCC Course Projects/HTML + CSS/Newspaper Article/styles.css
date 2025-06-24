@@ -1,0 +1,46 @@
+html {
+    font-size: 24px;
+}
+@font-face { 
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+}
+    
+.newspaper {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.0em;
+    font-weight: bold;
+    font-style: italic;
+}
+.name {
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+}
+.name, .author {
+    text-transform: uppercase;
+}
+.headline {
+    font-size: 2em;
+    font-weight: bold800;
+}
+.sub-headline {
+    font-weight: 100;
+    font-size: 1.5em;
+    font-style: italic;
+}
+.author {
+    font-weight: bold;
+}
+.text {
+    text-indent: 20px;
+    line-height: 2em;
+}.text::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
