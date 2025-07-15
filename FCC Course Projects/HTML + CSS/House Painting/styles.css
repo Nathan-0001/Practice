@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#house {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    top: 60px;
+    left: 50px;
+    background: lightgray;
+    
+    border: 1px solid black;
+}
+#house div {
+    position: absolute;
+}
+#roof {
+    width: 100%;
+    height: 100px;
+    background: orangered;
+    border:none;
+    border-bottom: 1px solid black;
+    top: 0x;
+}
+#chimney{
+    width: 50px;
+    height: 50px;
+    background:grey;
+    top: -50px;
+    right: 20px;
+    border: 1px solid black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    z-index: -1;
+}
+#door {
+    width: 70px;
+    height: 100px;
+    background: black;
+    bottom: 0;
+    left: 100px;
+    border: none;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+#handle {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#letter{
+    width : 30px;
+    height: 10px;
+    background: darkgray;
+    top: 50%;
+    border: none;
+    left: 20px;
+}
+#number {
+    width : 30px;
+    height: 10px;
+    color: white;
+    text-align: center;
+    top: 20%;
+    right: 20px;
+    border: none;
+}
+#window-1 {
+    width: 150px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.1);
+    top: 33%;
+    left: 10%;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+#window-2 {
+    width: 150px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.1);
+    top: 33%;
+    right: 10%;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+#window-3 {
+    width: 150px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 6%;
+    left: 60%;
+    border-radius: 10%;
+    border: 1px solid black;
+}

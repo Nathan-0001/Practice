@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.to-read {
+    background-image: linear-gradient(to right, #f0caaa, #cacaca);
+}
+.read {
+    background-image: linear-gradient(to right, #c1e1c5, #a8d8b9);
+}
+.in-progress {
+    background-image: linear-gradient(to right, #f16aa9, #d38d32);
+}
+span {
+    display: inline-block;
+}
+tr.in-progress span.status {
+    border: none;
+    background-image: linear-gradient(to top, #fff000, #ffb300);
+}
+tr.read span.status {
+    border: none;
+    background-image: linear-gradient(to top, #00ff00, #00b300);
+}
+tr.to-read span.status {
+    border: none;
+    background-image: linear-gradient(to top,#ff3636, #cc1414);
+}
+span.rate span.status {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+}
+span span[class^="rate"] {
+    border: 1px solid black;
+    border-radius: 60%;
+    margin: 0 2px;
+    height: 20px;
+    width: 20px;
+    background-color: #a8d8b9;
+}
+.rate.one {
+    background-color: linear-gradient(to right, #ff0000, #b30000);
+}
+.rate.two {
+    background-color: linear-gradient(to right, #ff8000, #b35900);
+}
+.rate.three {
+    background-color: linear-gradient(to right, #ffff00, #b3b300);
+}
