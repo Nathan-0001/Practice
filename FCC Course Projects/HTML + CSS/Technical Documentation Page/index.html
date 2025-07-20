@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>JavaScript Explanations</header>
+            <ul>
+                <li><a href="#variables" class="nav-link">Variables</a></li>
+                <li><a href="#functions" class="nav-link">Functions</a></li>
+                <li><a href="#loops" class="nav-link">Loops</a></li>
+                <li><a href="#arrays" class="nav-link">Arrays</a></li>
+                <li><a href="#objects" class="nav-link">Objects</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#asynchronous" class="nav-link">Asynchronous JavaScript</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="variables">
+                <header for="variables">Variables</header>
+                <p>In JavaScript, variables are used to store data values. You can declare a variable using the keywords <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>var name = "John";</code></li>
+                    <li><code>let age = 30;</code></li>
+                    <li><code>const PI = 3.14;</code></li>
+                </ul>
+            </section>
+            <section class="main-section" id="functions">
+                <header for="functions">Functions</header>
+                <p>Functions are blocks of code designed to perform a particular task. They can take inputs, called parameters, and return a value.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>function greet(name) {</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>return "Hello, " + name;</code></li>
+                    <li><code>}</code></li>
+                    <li><code>greet("Alice"); // Returns "Hello, Alice"</code></li> 
+                </ul>
+            </section>
+            <section class="main-section" id="loops">
+                <header for="loops">Loops</header> 
+                <p>Loops are used to execute a block of code repeatedly. The most common types of loops in JavaScript are <code>for</code>, <code>while</code>, and <code>do...while</code>.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>for (let i = 0; i < 5; i++) {</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>console.log(i);</code></li>
+                    <li><code>}</code></li>
+                </ul>
+            </section>
+            <section class="main-section" id="arrays">
+                <header for="arrays">Arrays</header>
+                <p>Arrays are used to store multiple values in a single variable. They can hold items of any type, including numbers, strings, and even other arrays.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>let fruits = ["apple", "banana", "cherry"];</code></li>
+                    <li><code>console.log(fruits[1]); // Outputs "banana"</code></li>
+                </ul>
+            </section>
+            <section class="main-section" id="objects"">
+                <header for="objects">Objects</header>
+                <p>Objects are collections of key-value pairs. They can represent real-world entities and can contain properties and methods.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>let person = {</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>name: "John",</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>age: 30,</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>greet: function() {</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>return "Hello, " + this.name;</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>}</code></li>
+                    <li><code>};</code></li>
+                </ul>    
+            </section>
+            <section class="main-section" id="events">
+                <header for="events">Events</header>
+                <p>Events are actions that occur in the browser, such as clicks, key presses, or page loads. JavaScript can respond to these events using event listeners.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>document.getElementById("myButton").addEventListener("click", function() {</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>alert("Button clicked!");</code></li>
+                    <li><code>});</code></li>
+                </ul>
+            </section>
+            <section class="main-section" id="asynchronous">
+                <header for="asynchronous">Asynchronous</header>
+                <p>Asynchronous JavaScript allows code to run without blocking the main thread. This is essential for tasks like fetching data from a server.</p>
+                <p>Example:</p>
+                <ul>
+                    <li><code>fetch("https://api.example.com/data")</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>.then(response => response.json())</code></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;<code>.then(data => console.log(data));</code></li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
