@@ -1,4 +1,4 @@
-const numbers = [];
-let shift = numbers.shift();
-console.log(numbers); // prints []
-console.log(shift); // prints undefined
+const fruits = ["Mango", "Pineapple", "Oranges"];
+for (const fruit of fruits) {
+    console.log(fruit);
+}
