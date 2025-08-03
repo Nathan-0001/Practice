@@ -14,7 +14,7 @@
 }
 @media(max-width: 400px){
     .title{
-        top: 50px;
+        margin-top: 30px;
     }
 }
 *{
